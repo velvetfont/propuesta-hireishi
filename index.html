@@ -478,6 +478,82 @@ hr.div { max-width: 840px; margin: 0 auto 28px; border: none; border-top: 1px so
   display: flex; gap: 9px; align-items: flex-start;
   padding: 7px 0; border-bottom: 1px solid #f0ede8; font-size: 12px; color: #555;
 }
+
+/* ===== MOBILE ===== */
+@media (max-width: 640px) {
+  .shell-header { padding: 20px 20px; }
+  .shell-header h1 { font-size: 17px; }
+  .shell-header p { font-size: 11px; }
+
+  .tabs-bar {
+    padding: 0 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+  .tabs-bar::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    padding: 12px 14px;
+    font-size: 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .tab-pane { padding: 24px 16px; }
+
+  .pane-title h2 { font-size: 18px; }
+
+  .browser { border-radius: 8px; }
+
+  .t3 .products { grid-template-columns: repeat(2, 1fr); }
+  .t5 .shop-products { grid-template-columns: repeat(2, 1fr); }
+
+  .t5 .product-page { grid-template-columns: 1fr; }
+  .t5 .product-img img { height: 180px; }
+
+  .footer-full-dark,
+  .footer-full-cafe { grid-template-columns: 1fr; gap: 10px; padding: 14px 16px; }
+
+  .scope { padding: 20px 18px; }
+  .scope .price { font-size: 26px; }
+
+  .actual .hdr,
+  .t1-dark .hdr,
+  .t1-cafe .hdr,
+  .t3 .hdr,
+  .t5 .hdr { min-height: 54px; padding: 0 14px; }
+
+  .actual .hdr .logo-wrap img { height: 56px; width: 56px; }
+
+  .actual .nav,
+  .t1-dark .nav,
+  .t1-cafe .nav,
+  .t3 .nav,
+  .t5 .nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    justify-content: flex-start;
+    padding-left: 14px;
+    scrollbar-width: none;
+  }
+  .actual .nav::-webkit-scrollbar,
+  .t1-dark .nav::-webkit-scrollbar,
+  .t1-cafe .nav::-webkit-scrollbar,
+  .t3 .nav::-webkit-scrollbar,
+  .t5 .nav::-webkit-scrollbar { display: none; }
+
+  .page-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+  }
+  .page-tabs::-webkit-scrollbar { display: none; }
+  .page-tab { white-space: nowrap; flex-shrink: 0; }
+}
 </style>
 </head>
 <body>
